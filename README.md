@@ -85,7 +85,7 @@ mvnrepository.com에서 각 라이브러리에 대한 의존성을 확인할 수
 ### 스프링 부트에서 사용하는 어노테이션
 
 - @EnableAutoConfiguration(@SpringBootApplication 안에 숨어 있음)
-- 빈은 두 단계에 걸쳐서 읽힘
+- 빈은 두 단계에 걸쳐서 읽힌다.
   - 1단계: @ComponentScan
   - 2단계: @EnableAutoConfiguration
 - @ComponentScan
@@ -96,3 +96,4 @@ mvnrepository.com에서 각 라이브러리에 대한 의존성을 확인할 수
     - org.springframework.boot.autoconfigure.EnableAutoConfiguration
   - @Configuration
   - @ConditionalOnXxxYyyZzz
+    - 조건에 따라 등록할지의 여부를 결정한다.
